@@ -12,13 +12,12 @@
   <link type="image/png" rel="icon" href="/images/Cafe W (Vertical, Light).png">
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <!-- 본문 바로가기 -->
+  <!-- 웹접근성 향상을 위한 skip navigation -->
   <div hidden class="skip-nav"><a href="#">본문 바로가기</a></div>
-  <!-- 헤더 -->
+  <!-- header start -->
   <header>
-    <div class="inner">
+    <div class="header__inner inner">
       <h1 class="header__heading">
         <a href="#"><img src="/images/Cafe W (Horizontal, Dark) (1).png" alt="Cafe W lAB logo"></a>
       </h1>
@@ -40,6 +39,7 @@
 
         </button>
       </form>
+      <!-- navigation -->
       <nav class="header__navigation">
         <h2 class="a11y-hidden">
           추천메뉴
@@ -89,6 +89,7 @@
       </nav>
     </div>
   </header>
+
   <!-- youtube section -->
   <section class="main__video">
     <div class="inner">
@@ -100,9 +101,41 @@
       <img class="main__video-symbol2" src="./images/Star_Symbol.png" alt="LAB__symbol">
     </div>
   </section>
+
+  <!-- main의 LAB section-->
+  <section class="LAB">
+    <div class="LAB__inner inner">
+      <h2 class="LAB__heading">
+        CAFE W </em>COFFEE LAB</em>
+      </h2>
+      <p class="LAB__description">최고의 커피를 향한 끊임없는 노력 <em>카페 W 커피연구소</em></p>
+      <ul class="LAB__image-list">
+        <li>
+          <a href="#">
+            <fiugre>
+              <img src="./images/LAB menu.png" alt="커피 연구소의 연구소 메뉴 관련 이미지">
+                <figcation>LAB MENU</figcation>
+            </fiugre>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <fiugre>
+              <img src="./images/LAB barista.png" alt="커피 연구소의 연구소 바리스타 관련 이미지">
+                <figcation>LAB BARISTA</figcation>
+            </fiugre>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <footer role="contentinfo">
     <div class="footer__inner inner">
-      <a href="#" class="footer__logo"></a>
+      <a href="#" class="footer__logo">
+        <img src="/images/Cafe W (Vertical).png" alt="Cafe W LAB logo">
+      </a>
+
       <ul class="footer__guide-list">
         <li><a href="#">개인정보 처리방법</a></li>
         <li><a href="#">멤버스 이용약관</a></li>
