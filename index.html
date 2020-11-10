@@ -12,6 +12,7 @@
   <link type="image/png" rel="icon" href="/images/Cafe W (Vertical, Light).png">
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <!-- 웹접근성 향상을 위한 skip navigation -->
   <div hidden class="skip-nav"><a href="#">본문 바로가기</a></div>
@@ -89,45 +90,79 @@
       </nav>
     </div>
   </header>
-<<<<<<< HEAD
   <!-- main content start -->
   <main>
-    <div class="main__inner inner"></div>
+    <!-- main recommend section-->
+    <section class="main__recommend">
+      <div class="main__recommend-inner inner">
+        <h2 class="a11y-hidden">시즌 추천 메뉴</h2>
+        <p class="main__recommend-descripation">
+          SPRING IS A CUP 
+          <span>of</span>  <!-- css 작업상 필요하다고 느껴져서 마크업-->
+          CHOUX CREAM 
+          <em>봄이 왔다 커피가 설렌다</em> <!-- 시즌메뉴를 강조하기 위한 태그 사용 -->
+        </p>
+        <ul class="main__recommend-list">
+          <li>
+            <figure class="main__recommend-thumbnail">
+              <img src="/images/Beverage 01.png" alt="추천메뉴: 딸기 레이어 슈 크림 프라푸치노">
+              <figcaption>
+                <span lang="en">STARAWBERRY LAAYER CHOUX CREAM FRAPPUCCINO</span>
+                딸기 레이어 슈 크림 프라푸치노
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="main__recommend-thumbnail">
+              <img src="/images/Beverage 03.png" alt="추천메뉴: 슈 크림 라뗴">
+              <figcaption>
+                <span lang="en">CHOUX CREAM LATTE</span>
+                슈 크림 라떼
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="main__recommend-thumbnail">
+              <img src="/images/Beverage 02.png" alt="추천메뉴: 스프링 피치 그린티">
+              <figcaption>
+                <span lang="en">SPRING PEACH GREEN TEA</span>
+                스프링 피치 그린티
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <a class="main__recommend-more" href="#">자세히 보기</a>
+      </div>
+    </section>
+    <!-- main LAB section-->
+    <section class="main__lab">
+      <div class="main__lab-inner inner">
+        <h2 class="main__lab-heading">
+          CAFE W </em>COFFEE LAB</em>
+        </h2>
+        <p class="main__lab-description">최고의 커피를 향한 끊임없는 노력 <em>카페 W 커피연구소</em></p>
+        <ul class="main__lab-image-list">
+          <li>
+            <a href="#">
+              <fiugre>
+                <img src="./images/LAB menu.png" alt="커피 연구소의 연구소 메뉴 관련 이미지">
+                <figcation>LAB MENU</figcation>
+              </fiugre>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <fiugre>
+                <img src="./images/LAB barista.png" alt="커피 연구소의 연구소 바리스타 관련 이미지">
+                <figcation>LAB BARISTA</figcation>
+              </fiugre>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
   <!-- footer start -->
-=======
-
-  <!-- main의 LAB section-->
-  <section class="LAB">
-    <div class="LAB__inner inner">
-      <h2 class="LAB__heading">
-        CAFE W </em>COFFEE LAB</em>
-      </h2>
-      <p class="LAB__description">최고의 커피를 향한 끊임없는 노력 <em>카페 W 커피연구소</em></p>
-      <ul class="LAB__image-list">
-        <li>
-          <a href="#">
-            <fiugre>
-              <img src="./images/LAB menu.png" alt="커피 연구소의 연구소 메뉴 관련 이미지">
-                <figcation>LAB MENU</figcation>
-            </fiugre>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <fiugre>
-              <img src="./images/LAB barista.png" alt="커피 연구소의 연구소 바리스타 관련 이미지">
-                <figcation>LAB BARISTA</figcation>
-            </fiugre>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!--main의  -->
-
->>>>>>> 2ad26981fd0e94f31daedfe58f9d3d59ed7260ff
   <footer role="contentinfo">
     <div class="footer__inner inner">
       <a href="#" class="footer__logo">
@@ -145,12 +180,12 @@
       <address class="footer__address">
         <span>서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)</span>
         <span class="divider" aria-hidden="true">ㅣ</span>
-          <span>연락처 : <a class="address__telephone" href="tel:0269512121">02-6951-2121</a>
+        <span>연락처 : <a class="address__telephone" href="tel:0269512121">02-6951-2121</a>
           사업자 등록번호 : 107-86-16302</span>
-          <span class="divider" aria-hidden="true">ㅣ</span>
-          <span>통신판매업 신고 : 강남 제 002519호</span>
-          <span class="divider" aria-hidden="true">ㅣ</span>
-          <span>대표이사 : 김데레사</span>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <span>통신판매업 신고 : 강남 제 002519호</span>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <span>대표이사 : 김데레사</span>
       </address>
       <small class="copyright">
         &copy; 2020 CAFE W COMPANY. ALL rights reserved.
