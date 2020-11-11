@@ -1,0 +1,104 @@
+/* 본문 바로가기 */
+.Skip-nav a{
+  display: none;
+  width: 100%;
+  Height: 0;
+  Padding:0;
+  Text-align: center;
+  Z-index: 100;
+  position: absolute;
+  Top:0;
+  left: 0;
+  }
+  
+  .skip-nav a:focus{
+  height: auto;
+  }
+  
+  /* lab section */
+  .main__lab{
+    background: yellow;
+    /* padding: 80px 120px; */
+    height: 1192px;
+    background-color:#FFFCF9;
+  }
+  
+  /* lab-heading CAFE W COFFEE LAB */
+  .main__lab-heading{
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    font-size: 4.6rem;
+    line-height: 64px;
+    letter-spacing: 0.23rem;
+  }
+  .main__lab-heading em{
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  /* lab-description 카페 W 연구소 */
+  .main__lab-description{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin:8px 0 0 0;
+    line-height: 25px;
+    letter-spacing: 0.18rem;
+  }
+  .main__lab-description em{
+    font-style:normal;
+    font-weight: 700;
+  }
+  
+  /* cofe w lab line */
+  .main__lab-description::after{
+    content:"";
+    display: block;
+    margin: 55px auto;
+    background-color: #7D6F5D;
+    height: 1px;
+    width: 70px;
+  }
+  /* cafe w lab img list */
+  .main__lab-image-list{
+    position: relative;
+  }
+  .main__lab-image-list li{
+    position: absolute;
+  }
+  .main__lab-image-list li:nth-child(2){
+    top:133px;
+    left:526px;
+  }
+  .main__lab-image-list figure{
+    width: 580px;
+    height: 580px;
+  }
+  .main__lab-image-list img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* cafe W lab의 text */
+  .main__lab-image-list figure{
+    position: relative;
+  }
+  .main__lab-image-list figcaption{
+    color: #FFFCF9;
+    position: absolute;
+    bottom:150px;
+    left: 190px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height:44px;
+    letter-spacing: 0.32rem;
+  }
+  .main__lab-image-list figcaption::after{
+    content: "";
+    display: block;
+    margin-top: 15px;
+    /* 원래는 margin-top:30/ border:10px */
+    border: 5px solid #FFFCF9;
+  }
