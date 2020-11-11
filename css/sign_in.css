@@ -1,0 +1,73 @@
+.main__login-section{
+  margin: 0 auto;
+  background: lightgreen;
+  width: 742px;
+  height: 614px;
+  border-radius: 6px;
+  box-shadow: 0px 15px 14px rgba(70, 55, 17, 0.4);
+  position: relative;
+}
+.main__login-section::before{
+  content: "";
+  position: absolute;
+  left: -139px;
+  top: 259px;
+  width: 70px;
+  height: 95px;
+  background: url(../images/Star_Symbol.png) no-repeat;
+}
+.main__login-section::after{
+  content: "";
+  position: absolute;
+  right: -139px;
+  top: 259px;
+  width: 70px;
+  height: 95px;
+  background: url(../images/Star_Symbol.png) no-repeat;
+}
+.main__login-heading{
+  text-align: center;
+  border-bottom: 1px solid var(--theme-black);
+}
+.main__login-heading span{
+  display: block;
+}
+.login__form-inner{
+  margin: 0 152px;
+}
+.main__login-id label,
+.main__login-password label{
+  display: block;
+}
+.main__login-id input,
+.main__login-password input,
+.main__login-button{
+  display: block;
+  width: 438px;
+  height: 46px;
+}
+.main__login-toggle{
+  margin-bottom: 15px;
+}
+.main__login-section strong{
+  display: block;
+  width: 438px;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+.main__login-section strong::before{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/Star.png) no-repeat;
+}
+.main__login-list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.main__login-list span{
+  margin: 0 16px;
+}
