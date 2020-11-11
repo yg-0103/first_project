@@ -18,31 +18,35 @@
   <div hidden class="skip-nav"><a href="#">본문 바로가기</a></div>
   <!-- header start -->
   <header>
-    <div class="header__inner inner">
-      <h1 class="header__heading">
-        <a href="#"><img src="/images/CafeW(Horizontal,Dark).png" alt="Cafe W lAB logo"></a>
-      </h1>
-      <ul class="header__sign-list">
-        <li>
-          <a href="#">Sign In</a>
-        </li>
-        <li>
-          <a href="#">Sign Up</a>
-        </li>
-      </ul>
-      <form action="#" name="searchForm" method="POST" class="header__search-form">
-        <fieldset>
-          <legend>검색 폼</legend>
-          <label class="a11y-hidden" for="search">검색창</label>
-          <input name="search" class="header__search" id="search" type="search">
-        </fieldset>
-        <button type="submit" class="btn--search" aria-label="검색">
-          <svg class="icon">
-            <use href="#Search-button"></use>
-          </svg>
-        </button>
-      </form>
+    <div class="header__container">
+      <div class="header__inner inner">
+        <h1 class="header__heading">
+          <a href="#"><img src="/images/CafeW(Horizontal,Dark).png" alt="Cafe W lAB logo"></a>
+        </h1>
+        <ul class="header__sign-list">
+          <li>
+            <a href="#">Sign In</a>
+          </li>
+          <li>
+            <a href="#">Sign Up</a>
+          </li>
+        </ul>
+        <form action="#" name="searchForm" method="POST" class="header__search-form">
+          <fieldset>
+            <legend>검색 폼</legend>
+            <label class="a11y-hidden" for="search">검색창</label>
+            <input name="search" class="header__search" id="search" type="search">
+          </fieldset>
+          <button type="submit" class="btn--search" aria-label="검색">
+            <svg class="icon">
+              <use href="#Search button"></use>
+            </svg>
+          </button>
+        </form>
+    </div>
+  </div>
       <!-- navigation -->
+    <div class="inner">
       <nav class="header__navigation">
         <h2 class="a11y-hidden">
           추천메뉴
@@ -81,7 +85,7 @@
             </ul>
           </li>
           <li>
-            <a class="header__menu-item" href="#">Members</a>
+            <a class="header__menu-item" href="#">Customer Service</a>
             <ul class="header__sub-menu-list">
               <li><a href="#">공지사항</a></li>
               <li><a href="#">추천 채널</a></li>
@@ -97,291 +101,324 @@
     <!-- 1. main recommend section 연구 -->
     <section class="main__recommend">
       <div class="main__recommend-inner inner">
-        <h2 class="a11y-hidden">시즌 추천 메뉴</h2>
-        <p class="main__recommend-descripation">
-          SPRING IS A CUP
-          <span>of</span> <!-- css 작업상 필요하다고 느껴져서 마크업-->
-          CHOUX CREAM
-          <em>봄이 왔다 커피가 설렌다</em> <!-- 시즌메뉴를 강조하기 위한 태그 사용 -->
-        </p>
+        <div class="main__recommend-text">
+          <h2 class="a11y-hidden">시즌 추천 메뉴</h2>
+          <p class="main__recommend-description" lang="en">
+            SPRING IS A CUP
+            <span class="main__recommend-style-text">of</span> <!-- css 작업상 필요하다고 느껴져서 마크업-->
+            <span class="main__recommend-big-text">CHOUX CREAM</span>
+            <em>봄이 왔다 커피가 설렌다</em> <!-- 시즌메뉴를 강조하기 위한 태그 사용 -->
+          </p>
+        </div>
         <ul class="main__recommend-list">
           <li>
             <figure class="main__recommend-thumbnail">
               <img src="/images/Beverage01.png" alt="추천메뉴: 딸기 레이어 슈 크림 프라푸치노">
               <figcaption>
-                <span lang="en">STARAWBERRY LAAYER CHOUX CREAM FRAPPUCCINO</span>
+                <span lang="en">STARAWBERRY&nbsp;LAAYER CHOUX&nbsp;CREAM&nbsp;FRAPPUCCINO</span>
                 딸기 레이어 슈 크림 프라푸치노
               </figcaption>
             </figure>
           </li>
           <li>
             <figure class="main__recommend-thumbnail">
-              <img src="/images/Beverage03.png" alt="추천메뉴: 슈 크림 라뗴">
               <figcaption>
                 <span lang="en">CHOUX CREAM LATTE</span>
                 슈 크림 라떼
               </figcaption>
+              <img src="/images/Beverage03.png" alt="추천메뉴: 슈 크림 라뗴">
             </figure>
           </li>
           <li>
             <figure class="main__recommend-thumbnail">
-              <img src="/images/Beverage02.png" alt="추천메뉴: 스프링 피치 그린티">
               <figcaption>
                 <span lang="en">SPRING PEACH GREEN TEA</span>
                 스프링 피치 그린티
               </figcaption>
+              <img src="/images/Beverage02.png" alt="추천메뉴: 스프링 피치 그린티">
             </figure>
           </li>
         </ul>
-        <a class="main__recommend-more" href="#">자세히 보기</a>
+        <a class="main__recommend-more more" href="#">자세히 보기</a>
       </div>
     </section>
     <!-- 2. main lectures section ! 연구-->
     <div class="main__lectures">
-      <section class="main__multicampus">
-        <h2 class="main__multicampus-heading">
-          <a role="button" href="#"><em>멀티 캠퍼스</em> 추천 강좌</a>
-        </h2>
-        <ul class="main__multicampus-lecture-list">
-          <li>
-            <div class="main__multicampus-lecture">
-              <h3 class="main__multicampus-lecture-heading">
-                GIT &amp; HTML/CSS
-              </h3>
-              <p class="main__multicampus-lecture-description">
-                입문자를 위한 GIT과 HTML&amp;CSS
-              </p>
-              <a href="#">강의 정보</a>
-            </div>
-            <div class="main__multicampus-lecture-dialog">
-              <h3 class="main__multicampus-dialog-heding">
-                GIT &amp; HTML/CSS
-              </h3>
-              <p class="main__multicampus-dialog-description">
-                입문자를 위한 GIT과 HTML&amp;CSS
-              </p>            
-              <span class="main__multicampus-dialog-grade">
-                 <span aria-hidden="true">★★★★☆</span>4점
-              </span>         
-              <table class="main__multicampus-dialog-table">
-                <caption class="a11y-hidden">강좌 정보</caption>
-                <tr>
-                  <th>학습시간</th>
-                  <td>09:00 ~ 17:00(28시간)</td>
-                  <th>난이도</th>
-                  <td>초급</td>
-                </tr>
-                <tr>
-                  <th>교육비 지원</th>
-                  <td>고용보험 비환급</td>
-                  <th>평가항목</th>
-                  <td>출석률 100%</td>
-                </tr>
-                <tr>
-                  <th>수료기준</th>
-                  <td>총점 80점 이상시 수료</td>
-                  <th>정원</th>
-                  <td>24 명</td>
-                </tr>
-                <tr>
-                  <th>교재정보</th>
-                  <td colspan="3">입문자를 위한 GIT과 HTML&amp;CSS
-                      HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
-                  </td>
-                </tr>                
-              </table>
-              <button type="button" class="main__multicampus-btn--close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-          </li>
-          <li>
-            <div class="main__multicampus-lecture">
-              <h3 class="main__multicampus-lecture-heading">
-                RESPONSIVE WEB
-                DESIGN&nbsp;STRATEGIES
-              </h3>
-              <p class="main__multicampus-lecture-description">
-                반응형 웹디자인 전략
-              </p>
-              <a href="#">강의 정보</a>
-            </div>
-            <div class="main__multicampus-lecture-dialog">
-              <h3 class="main__multicampus-dialog-heding">
-                RESPONSIVE WEB
-                DESIGN STRATEGIES
-              </h3>
-              <p class="main__multicampus-dialog-description">
-                반응형 웹디자인 전략
+      <div class="inner">
+        <section class="main__multicampus">
+          <h2 class="main__multicampus-heading">
+            <a role="button" href="#"><em>멀티 캠퍼스</em> 추천 강좌</a>
+          </h2>
+          <ul class="main__multicampus-lecture-list">
+            <li>
+              <div class="main__multicampus-lecture">
+                <h3 class="main__multicampus-lecture-heading">
+                  GIT &amp; 
+                  <span class="white-space">HTML/CSS</span>
+                </h3>
+                <p class="main__multicampus-lecture-description">
+                  입문자를 위한 GIT과 HTML&amp;CSS
+                </p>
+                <a href="#" class="more">강의 정보</a>
+              </div>
+              <div class="main__multicampus-lecture-dialog">
+                <h3 class="main__multicampus-dialog-heding">
+                  GIT &amp; HTML/CSS
+                </h3>
+                <p class="main__multicampus-dialog-description">
+                  입문자를 위한 GIT과 HTML&amp;CSS
+                </p>            
                 <span class="main__multicampus-dialog-grade">
-                  <span aria-hidden="true">★★★★★</span> 5점
-                </span>
-              </p>
-              <table class="main__multicampus-dialog-table">
-                <caption class="a11y-hidden">강좌 정보</caption>
-                <tr>
-                  <th>학습시간</th>
-                  <td>09:00 ~ 17:00(28시간)</td>
-                  <th>난이도</th>
-                  <td>초급</td>
-                </tr>
-                <tr>
-                  <th>교육비 지원</th>
-                  <td>고용보험 비환급</td>
-                  <th>평가항목</th>
-                  <td>출석률 100%</td>
-                </tr>
-                <tr>
-                  <th>수료기준</th>
-                  <td>총점 80점 이상시 수료</td>
-                  <th>정원</th>
-                  <td>24 명</td>
-                </tr>
-                <tr>
-                  <th>교재정보</th>
-                  <td colspan="3">입문자를 위한 반응형 웹디자인 전략
-                      HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
-                  </td>
-                </tr>                
-              </table>
-              <button type="button" class="main__multicampus-btn--close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-          </li>
-        </ul>
-        <div class="main__muliticampus-pagination">
-          <button class="main__multicampus-btn--prev"></button>
-          <ul class="main__multicampus-pagination-list">
-            <li><button class="main__multicampus-btn--play"></button></li>
-            <li><a href="#">o</a></li>
-            <li><a href="#">o</a></li>
-            <li><a href="#">o</a></li>
-          </ul>                                                                                                                                            
-          <button class="main__multicampus-btn--next"></button>
-        </div>
-      </section>
-      <section class="main__edeum">
-        <h2 class="main__edeum-heading">
-          <a role="button" href="#"><em>이듬 블렌디드 러닝</em> 추천 강좌</a>
-        </h2>
-        <ul class="main__edeum-lecture-list">
-          <li>
-            <div class="main__edeum-lecture">
-              <h3 class="main__edeum-lecture-heading">
-                UI STURCTURE &amp; DESIGN COURSE
-              </h3>
-              <p class="main__edeum-lecture-description">
-                UI 구조 디자인 과정
-              </p>
-              <a href="#">강의 정보</a>
-            </div>
-            <div class="main__edeum-lecture-dialog">
-              <h3 class="main__edeum-dialog-heding">
-                UI STURCTURE &amp; DESIGN COURSE
-              </h3>
-              <p class="main__edeum-dialog-description">
-                UI 구조 디자인 과정
-                <span class="main__edeum-dialog-grade">
-                  <span aria-hidden="true">★★★★☆</span> 4점
-                </span>
-              </p>
-              <table class="main__edeum-dialog-table">
-                <caption class="a11y-hidden">강좌 정보</caption>
-                <tr>
-                  <th>학습시간</th>
-                  <td>09:00 ~ 17:00(28시간)</td>
-                  <th>난이도</th>
-                  <td>초급</td>
-                </tr>
-                <tr>
-                  <th>교육비 지원</th>
-                  <td>고용보험 비환급</td>
-                  <th>평가항목</th>
-                  <td>출석률 100%</td>
-                </tr>
-                <tr>
-                  <th>수료기준</th>
-                  <td>총점 80점 이상시 수료</td>
-                  <th>정원</th>
-                  <td>24 명</td>
-                </tr>
-                <tr>
-                  <th>교재정보</th>
-                  <td colspan="3">입문자를 위한 GIT과 HTML&amp;CSS
-                      HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
-                  </td>
-                </tr>                
-              </table>
-              <button class="main__edeum-btn--close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-          </li>
-          <li>
-            <div class="main__edeum-lecture">
-              <h3 class="main__edeum-lecture-heading">
-                UI INTERATION &amp; JUNIOR COURSE
-              </h3>
-              <p class="main__edeum-lecture-description">
-                UI 인터렉션 주니어 과정
-              </p>
-              <a href="#">강의 정보</a>
-            </div>
-            <div class="main__edeum-lecture-dialog">
-              <h3 class="main__edeum-dialog-heding">
-                UI INTERATION &amp; JUNIOR COURSE
-              </h3>
-              <p class="main__edeum-dialog-description">
-                UI 인터렉션 주니어 과정
-                <span class="main__edeum-dialog-grade">
-                  <span aria-hidden="true">★★★★★</span> 5점
-                </span>
-              </p>
-              <table class="main__edeum-dialog-table">
-                <caption class="a11y-hidden">강좌 정보</caption>
-                <tr>
-                  <th>학습시간</th>
-                  <td>09:00 ~ 17:00(28시간)</td>
-                  <th>난이도</th>
-                  <td>초급</td>
-                </tr>
-                <tr>
-                  <th>교육비 지원</th>
-                  <td>고용보험 비환급</td>
-                  <th>평가항목</th>
-                  <td>출석률 100%</td>
-                </tr>
-                <tr>
-                  <th>수료기준</th>
-                  <td>총점 80점 이상시 수료</td>
-                  <th>정원</th>
-                  <td>24 명</td>
-                </tr>
-                <tr>
-                  <th>교재정보</th>
-                  <td colspan="3">입문자를 위한 반응형 웹디자인 전략
-                      HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
-                  </td>
-                </tr>                
-              </table>
-              <button type="button" class="main__edeum-btn--close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-          </li>
-        </ul>
-        <div class="main__edeum-pagination">
-          <button class="main__edeum-btn--prev"></button>
-          <ul class="main__edeum-pagination-list">
-            <li><button type="button" class="main__edeum-btn--play"></button></li>
-            <li><a href="#">o</a></li>
-            <li><a href="#">o</a></li>
-            <li><a href="#">o</a></li>
+                   <span aria-hidden="true">★★★★☆</span>4점
+                </span>         
+                <table class="main__multicampus-dialog-table">
+                  <caption class="a11y-hidden">강좌 정보</caption>
+                  <tr>
+                    <th>학습시간</th>
+                    <td>09:00 ~ 17:00(28시간)</td>
+                    <th>난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th>교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th>평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th>수료기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th>정원</th>
+                    <td>24 명</td>
+                  </tr>
+                  <tr>
+                    <th>교재정보</th>
+                    <td colspan="3">입문자를 위한 GIT과 HTML&amp;CSS
+                        HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
+                    </td>
+                  </tr>                
+                </table>
+                <button type="button" class="main__multicampus-btn--close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="main__multicampus-lecture">
+                <h3 class="main__multicampus-lecture-heading">
+                  RESPONSIVE WEB
+                  DESIGN&nbsp;STRATEGIES
+                </h3>
+                <p class="main__multicampus-lecture-description">
+                  반응형 웹디자인 전략
+                </p>
+                <a class="more" href="#">강의 정보</a>
+              </div>
+              <div class="main__multicampus-lecture-dialog">
+                <h3 class="main__multicampus-dialog-heding">
+                  RESPONSIVE WEB
+                  DESIGN STRATEGIES
+                </h3>
+                <p class="main__multicampus-dialog-description">
+                  반응형 웹디자인 전략
+                  <span class="main__multicampus-dialog-grade">
+                    <span aria-hidden="true">★★★★★</span> 5점
+                  </span>
+                </p>
+                <table class="main__multicampus-dialog-table">
+                  <caption class="a11y-hidden">강좌 정보</caption>
+                  <tr>
+                    <th>학습시간</th>
+                    <td>09:00 ~ 17:00(28시간)</td>
+                    <th>난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th>교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th>평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th>수료기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th>정원</th>
+                    <td>24 명</td>
+                  </tr>
+                  <tr>
+                    <th>교재정보</th>
+                    <td colspan="3">입문자를 위한 반응형 웹디자인 전략
+                        HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
+                    </td>
+                  </tr>                
+                </table>
+                <button type="button" class="main__multicampus-btn--close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </li>
           </ul>
-          <button class="main__edeum-btn--next"></button>
-        </div>
-      </section>
+          <div class="main__muliticampus-pagination">
+            <button class="main__multicampus-btn--prev">
+              <svg class="icon">
+                <use href="#Prev button"></use>
+              </svg>
+            </button>
+            <ul class="main__multicampus-pagination-list">
+              <li>
+                <button class="main__multicampus-btn--play">
+                  <svg class="icon">
+                    <use href="#Pause button"></use>
+                 </svg>
+                </button>
+              </li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>                                                                                                                                            
+            <button class="main__multicampus-btn--next">
+              <svg class="icon">
+                <use href="#Next button"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="main__edeum">
+          <h2 class="main__edeum-heading">
+            <a role="button" href="#"><em>이듬 블렌디드 러닝</em> 추천 강좌</a>
+          </h2>
+          <ul class="main__edeum-lecture-list">
+            <li>
+              <div class="main__edeum-lecture">
+                <h3 class="main__edeum-lecture-heading">
+                  UI STURCTURE &amp; DESIGN COURSE
+                </h3>
+                <p class="main__edeum-lecture-description">
+                  UI 구조 디자인 과정
+                </p>
+                <a class="more" href="#">강의 정보</a>
+              </div>
+              <div class="main__edeum-lecture-dialog">
+                <h3 class="main__edeum-dialog-heding">
+                  UI STURCTURE &amp; DESIGN COURSE
+                </h3>
+                <p class="main__edeum-dialog-description">
+                  UI 구조 디자인 과정
+                  <span class="main__edeum-dialog-grade">
+                    <span aria-hidden="true">★★★★☆</span> 4점
+                  </span>
+                </p>
+                <table class="main__edeum-dialog-table">
+                  <caption class="a11y-hidden">강좌 정보</caption>
+                  <tr>
+                    <th>학습시간</th>
+                    <td>09:00 ~ 17:00(28시간)</td>
+                    <th>난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th>교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th>평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th>수료기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th>정원</th>
+                    <td>24 명</td>
+                  </tr>
+                  <tr>
+                    <th>교재정보</th>
+                    <td colspan="3">입문자를 위한 GIT과 HTML&amp;CSS
+                        HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
+                    </td>
+                  </tr>                
+                </table>
+                <button class="main__edeum-btn--close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="main__edeum-lecture">
+                <h3 class="main__edeum-lecture-heading">
+                  UI INTERATION &amp; JUNIOR COURSE
+                </h3>
+                <p class="main__edeum-lecture-description">
+                  UI 인터렉션 주니어 과정
+                </p>
+                <a class="more" href="#">강의 정보</a>
+              </div>
+              <div class="main__edeum-lecture-dialog">
+                <h3 class="main__edeum-dialog-heding">
+                  UI INTERATION &amp; JUNIOR COURSE
+                </h3>
+                <p class="main__edeum-dialog-description">
+                  UI 인터렉션 주니어 과정
+                  <span class="main__edeum-dialog-grade">
+                    <span aria-hidden="true">★★★★★</span> 5점
+                  </span>
+                </p>
+                <table class="main__edeum-dialog-table">
+                  <caption class="a11y-hidden">강좌 정보</caption>
+                  <tr>
+                    <th>학습시간</th>
+                    <td>09:00 ~ 17:00(28시간)</td>
+                    <th>난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th>교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th>평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th>수료기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th>정원</th>
+                    <td>24 명</td>
+                  </tr>
+                  <tr>
+                    <th>교재정보</th>
+                    <td colspan="3">입문자를 위한 반응형 웹디자인 전략
+                        HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
+                    </td>
+                  </tr>                
+                </table>
+                <button type="button" class="main__edeum-btn--close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="main__edeum-pagination">
+            <button class="main__edeum-btn--prev">
+              <svg class="icon">
+                <use href="#Prev button"></use>
+              </svg>
+            </button>
+            <ul class="main__edeum-pagination-list">
+              <li>
+                <button type="button" class="main__edeum-btn--play">
+                  <svg class="icon">
+                    <use href="#Pray button"></use>
+                  </svg>
+                </button>
+              </li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+            <button class="main__edeum-btn--next">
+              <svg class="icon">
+                <use href="#Next button"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
     </div>
 
     <!-- 3. review, favorite section 연구 -->
@@ -646,10 +683,10 @@
         fill="#FFFCF9"></path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Next button">
-      <path d="M13 30.875l10.898-10.91L13 9.055 14.055 8 26.03 19.965 14.055 31.93 13 30.875z" fill="#FFFCF9"></path>
+      <path d="M13 30.875l10.898-10.91L13 9.055 14.055 8 26.03 19.965 14.055 31.93 13 30.875z" fill="#282725"></path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Pause button">
-      <path d="M14 30V10h3.5v20H14zm9.5-20H27v20h-3.5V10z" fill="#FFFCF9"></path>
+      <path d="M14 30V10h3.5v20H14zm9.5-20H27v20h-3.5V10z" fill="#282725"></path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Play button">
       <path d="M28 20.5L13 10v21l15-10.5z" fill="#FFFCF9"></path>
@@ -658,7 +695,7 @@
       <path d="M32 19.25v1.5H20.75V32h-1.5V20.75H8v-1.5h11.25V8h1.5v11.25H32z" fill="#FFFCF9"></path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Prev button">
-      <path d="M26.031 30.875l-1.054 1.055L13 19.965 24.977 8l1.054 1.055-10.898 10.91 10.898 10.91z" fill="#FFFCF9">
+      <path d="M26.031 30.875l-1.054 1.055L13 19.965 24.977 8l1.054 1.055-10.898 10.91 10.898 10.91z" fill="#282725">
       </path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Same">
