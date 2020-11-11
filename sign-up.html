@@ -9,7 +9,7 @@
   <meta name="description" content="커피와 관련된 연구를 하는 커피연구소 입니다.">
   <meta name="keywords" content="cafe, cafe연구소, cafe 시즌메뉴추천,cafe메뉴, 클래스 추천강좌, 멀티캠퍼스 추천강좌, 이듬 블렌디드 러닝 추천강좌">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="image/png" rel="icon" href="/images/Cafe W (Vertical, Light).png">
+  <link type="image/png" rel="icon" href="/images/CafeW(Vertical,Light).png">
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +20,7 @@
   <header>
     <div class="header__inner inner">
       <h1 class="header__heading">
-        <a href="#"><img src="/images/Cafe W (Horizontal, Dark) (1).png" alt="Cafe W lAB logo"></a>
+        <a href="#"><img src="/images/CafeW(Horizontal,Dark).png" alt="Cafe W lAB logo"></a>
       </h1>
       <ul class="header__sign-list">
         <li>
@@ -92,6 +92,7 @@
   </header>
 
   <!-- 회원가입 sign up -->
+
   <section class="main__sign-up">
     <div class="main__sign-up-inner inner">
 
@@ -131,8 +132,8 @@
           <legend>사용자 정보 양식</legend>
           <div class="main__user-name">
             <label for="userName">이름</label>
-            <input type="Name" id="userName" name="userName" aria-required="true" aria-invalid="false"
-              aria-describedby="userNameErrorFeedback" placeholder="예)김데레사">
+            <input type="text" id="userName" name="userName" aria-required="true" aria-invalid="false"
+              aria-describedby="userNameErrorFeedback" placeholder="(예)김데레사">
           </div>
 
           <div class="main__user-sexual">
@@ -176,8 +177,8 @@
 
           <div class="main__user-telephone">
             <label for="telephone">전화번호</label>
-            <input type="telephone" id="telephone" name="telephone" aria-required="true" aria-invalid="false"
-              aria-describedby="telephoneErrorFeedback" placeholder="사용 중인 전화번호를 입력하세요. (하이픈 제외 숫자만 입력)">
+            <input type="text" id="telephone" name="telephone" aria-required="true" aria-invalid="false"
+              aria-describedby="telephoneErrorFeedback" placeholder="사용 중인 전화번호를 입력하세요.(하이픈 제외 숫자만 입력)">
             <span role="alert" id="telephoneErrorFeedback">전화번호 입력이 잘못되었습니다.</span>
           </div>
 
@@ -208,13 +209,13 @@
 
           <div class="main__user-nickname">
             <label for="nickname">닉네임</label>
-            <input type="nickname" id="nickname" name="nickname" aria-required="true" aria-invalid="false"
+            <input type="text" id="nickname" name="nickname" aria-required="true" aria-invalid="false"
               aria-describedby="nicknameErrorFeedback" placeholder="예) 슬비(명사로 이루어진 한글 6자리 이내)">
-            <span role="alert" id="telephoneErrorFeedback">닉네임 입력이 잘못되었습니다.</span>
+            <span role="alert" id="nicknameeErrorFeedback">닉네임 입력이 잘못되었습니다.</span>
           </div>
 
           <div class="main__user-agree">
-            <h3 class="main__user-agree-heading"">선택적 개인정보 수집동의 및 이용약관</h3>
+            <h3 class="main__user-agree-heading">선택적 개인정보 수집동의 및 이용약관</h3>
         <p class=" main__user-agree-description">본인은 Cafe W(이하 “회사”라 합니다)가 제공하는 콜 마이 네임 서비스 (이하 “서비스”라 합니다)를 이용하기 위해,
               다음과 같이 “회사”가 본인의 개인정보를 수집·이용하는 것에 동의합니다.
               ※ 귀하께서는 개인정보 수집·이용에 대한 동의를 거부하실 수 있으나, 동의를 거부하실 경우 서비스 이용을 하실 수 없습니다.
@@ -239,11 +240,12 @@
       </form>
     </div>
   </section>
+
   <!-- footer start -->
-  <footer role="contentinfo">
+  <footer>
     <div class="footer__inner inner">
       <a href="#" class="footer__logo">
-        <img src="/images/Cafe W (Vertical).png" alt="Cafe W LAB logo">
+        <img src="/images/CafeW(Vertical).png" alt="Cafe W LAB logo">
       </a>
       <ul class="footer__guide-list">
         <li><a href="#">개인정보 처리방법</a></li>
@@ -267,7 +269,9 @@
       <small class="copyright">
         &copy; 2020 CAFE W COMPANY. ALL rights reserved.
       </small>
+    </div>
   </footer>
+
   <svg hidden width="0" height="0" class="hidden">
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Close button">
       <path fill-rule="evenodd" clip-rule="evenodd"
