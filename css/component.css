@@ -1,0 +1,22 @@
+.a11y-hidden,
+legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+[class$="-list"] {
+  list-style: none;
+  padding-left: 0;
+}
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.more {
+  display: inline-blok;
+  padding: 10px 25px;
+  border: 1px solid;
+}
