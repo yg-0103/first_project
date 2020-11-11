@@ -1,0 +1,11 @@
+:root {
+  --theme-black: #282725;
+  --theme-white: #FFFCF9;
+  --theme-pink: #E27762;
+  --theme-lightpink: #A37356;
+  --theme-brown: #412311;
+  --theme-lightbrown: #5F4C4C;
+  --font-small: 1.3rem;
+  --font-middle: 2.1rem;
+  --font-big: 2.8rem;
+}
