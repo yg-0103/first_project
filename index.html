@@ -9,7 +9,7 @@
   <meta name="description" content="커피와 관련된 연구를 하는 커피연구소 입니다.">
   <meta name="keywords" content="cafe, cafe연구소, cafe 시즌메뉴추천,cafe메뉴, 클래스 추천강좌, 멀티캠퍼스 추천강좌, 이듬 블렌디드 러닝 추천강좌">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="image/png" rel="icon" href="/images/CafeW(Vertical).png">
+  <link type="image/png" rel="icon" href="/images/CafeW(Vertical,Light).png">
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,7 +37,9 @@
           <input name="search" class="header__search" id="search" type="search">
         </fieldset>
         <button type="submit" class="btn--search" aria-label="검색">
-
+          <svg class="icon">
+            <use href="#Search-button"></use>
+          </svg>
         </button>
       </form>
       <!-- navigation -->
@@ -88,11 +90,6 @@
           </li>
         </ul>
       </nav>
-      <div class="header__notice">
-        <a href="#">카페 W 영업시간 조정 안내</a>
-        <time datetime="2020-02-19">2020.02.19</time>
-        <button class="header__notice-btn--close"></button>
-      </div>
     </div>
   </header>
   <!-- main content start -->
@@ -530,6 +527,11 @@
       </div>
     </section>
   </main>
+  <div class="header__notice">
+    <a href="#">카페 W 영업시간 조정 안내</a>
+    <time datetime="2020-02-19">2020.02.19</time>
+    <button class="header__notice-btn--close"></button>
+  </div>
   <!-- footer start -->
   <footer>
     <div class="footer__inner inner">
