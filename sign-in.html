@@ -30,7 +30,7 @@
           <a href="#">Sign Up</a>
         </li>
       </ul>
-      <form action="#" name="searchForm" method="POST" class="header__search-form">
+      <form action="#" method="POST" class="header__search-form">
         <fieldset>
           <legend>검색 폼</legend>
           <label class="a11y-hidden" for="search">검색창</label>
@@ -91,6 +91,49 @@
     </div>
   </header>
 
+  <main class="main__login">
+    <div class="inner">
+      <section>
+        <h2 class="main__login-form a11y-hidden">로그인</h2>
+        <p><span>SIGN IN</span>환영합니다. 이 곳은 CAFE W 입니다.</p>
+        <form class="main__login-form" action="#">
+          <fieldset>
+            <legend class="ally-hidden" aria-hidden="true">로그인 폼</legend>
+            <div>
+              <label for="userId">아이디</label>
+              <input id="userId" aria-required="true" type="password" aria-invalid="false" aria-describedby="passwordErrorFeedback" placeholder="사용자 계정을 입력합니다.">
+              <span role="alert" id="emailErrorFeedback">아이디 양식이 틀렸습니다.</span>
+            </div>
+            <div>
+              <label for="userPassword">패스워드</label>
+              <input id="userPassword" aria-required="true" type="password" aria-invalid="false" aria-describedby="passwordErrorFeedback" placeholder="사용자 계정 비밀번호를 입력합니다.">
+              <span role="alert" id="passwordErrorFeedback">비밀번호가 틀렸습니다.</span>
+            </div>
+            <button type="submit">로그인</button>
+            <div class="main__login-toggle">
+              <input id="saveId" type="checkbox">
+              <label for="saveId">아이디 저장</label>
+              <input id="saveLogin" type="checkbox">
+              <label for="saveLogin">로그인 상태 유지</label>
+            </div>
+          </fieldset>
+        </form>
+        <p>타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 사용자 정보 보호를 위해 정깆거인 비밀전호 변경을 요청 드립닌다.</p>
+        <p>Cafe W 공식 홈페이지는 Internet Explorer 9.0이상, Chrome, Firefox, Safari, Edge 브라우저에 최적화 되어있습니다.</p>
+        <ul>
+          <li><a href="#">회원가입</a></li>
+          <li><span aria-hidden="true">|</span></li>
+          <li><a href="#">아이디 찾기</a></li>
+          <li><span aria-hidden="true">|</span></li>
+          <li><a href="#">비밀번호 찾기</a></li>
+        </ul>
+      </section>
+      <div class="main__login-symbol">
+        <img src="./images/Star_Symbol.png" alt="웹카페 심볼">
+        <img src="./images/Star_Symbol.png" alt="웹카페 심볼">
+      </div>
+    </div>
+  </main>
   <!-- footer start -->
   <footer role="contentinfo">
     <div class="footer__inner inner">
