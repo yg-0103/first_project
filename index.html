@@ -169,7 +169,7 @@
                   입문자를 위한 GIT과 HTML&amp;CSS
                 </p>            
                 <span class="main__multicampus-dialog-grade">
-                   <span aria-hidden="true">★★★★☆</span>4점
+                   <span aria-hidden="true">★★★★☆</span> 4점
                 </span>         
                 <table class="main__multicampus-dialog-table">
                   <caption class="a11y-hidden">강좌 정보</caption>
@@ -194,7 +194,7 @@
                   <tr>
                     <th>교재정보</th>
                     <td colspan="3">입문자를 위한 GIT과 HTML&amp;CSS
-                        HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
+                        <span class="white-space">HTML&amp;CSS 웹사이트 개발과 디자인 기초(35,000원)</span>
                     </td>
                   </tr>                
                 </table>
@@ -217,14 +217,14 @@
               <div class="main__multicampus-lecture-dialog">
                 <h3 class="main__multicampus-dialog-heding">
                   RESPONSIVE WEB
-                  DESIGN STRATEGIES
+                  DESIGN&nbsp;STRATEGIES
                 </h3>
                 <p class="main__multicampus-dialog-description">
                   반응형 웹디자인 전략
-                  <span class="main__multicampus-dialog-grade">
+                </p>
+                  <span class="main__multicampus-dialog-grade white-space">
                     <span aria-hidden="true">★★★★★</span> 5점
                   </span>
-                </p>
                 <table class="main__multicampus-dialog-table">
                   <caption class="a11y-hidden">강좌 정보</caption>
                   <tr>
@@ -248,7 +248,7 @@
                   <tr>
                     <th>교재정보</th>
                     <td colspan="3">입문자를 위한 반응형 웹디자인 전략
-                        HTML&amp;CSS&nbsp;웹사이트&nbsp;개발과&nbsp;디자인&nbsp;기초(35,000원)
+                        <span class="white-space">HTML&amp;CSS 웹사이트 개발과 디자인 기초(35,000원)</span>
                     </td>
                   </tr>                
                 </table>
@@ -423,31 +423,47 @@
 
     <!-- 3. review, favorite section 연구 -->
     <section class="main__review-favorite">
-      <h2 class="a11y-hidden">인기강좌와 리뷰</h2>
-      <div class="main__review">
-        <p class="main__review-description">
-          <strong>무엇이 중요한지 알게된 시간!</strong>
-          제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.        
-          <span class="main__review-grade">
-            <span aria-hidden="true">★★★★★</span> 5점
-          </span>
-          <span>우정민</span>
-        </p>
-        <button type="button" class="main__review-more"></button>
-      </div>
-      <div class="main__favorite">
-        <h3 class="main__favorite-heading">카페 W 인기 강좌</h3>
-        <ol class="main__favorite-list">
-          <li><a href="#">UI 구조 &amp; 디자인</a><em>상승</em></li>
-          <li><a href="#">모바일 웹 UI 제작 실습</a><em>진입</em></li>
-          <li><a href="#">UI 인터렉션 주니어</a><em>하락</em></li>
-          <li><a href="#">React 프로그래밍</a><em>유지</em></li>
-        </ol>
-        <button class="main__favorite-more"></button>
-        <div class="main__brochure">
-          <a href="#">브로슈어 다운받기</a>
-          <span aria-hidden="true" class="ir"></span>
-          <img src="/images/Image16.png" alt="브로슈어 팜플렛">
+      <div class="main__review-favorite-inner inner">
+        <h2 class="a11y-hidden">인기강좌와 리뷰</h2>
+        <div class="main__review">
+          <p class="main__review-description">
+            <strong>무엇이 중요한지 알게된 시간!</strong>
+            제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.        
+            <span class="main__review-grade">
+              <span aria-hidden="true">★★★★★</span> 5점
+            </span>
+            <span>우정민</span>
+          </p>
+          <button type="button" class="main__review-more">
+            <svg class="icon">
+              <use href="#Play button"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="main__favorite-brochure">
+          <div class="main__favorite">
+            <h3 class="main__favorite-heading">카페 <span>W</span> 인기 강좌</h3>
+            <ol class="main__favorite-list">
+              <li><a href="#">UI 구조 &amp; 디자인</a><em class="main__favorite-list-up">상승</em></li>
+              <li><a href="#">모바일 웹 UI 제작 실습</a><em class="main__favorite-list-new">진입</em></li>
+              <li><a href="#">UI 인터렉션 주니어</a><em class="main__favorite-list-down">하락</em></li>
+              <li><a href="#">React 프로그래밍</a><em class="main__favorite-list-same">유지</em></li>
+            </ol>
+            <button class="main__favorite-more">
+              <svg class="icon">
+                <use href="#Plus button"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="main__brochure">
+            <a href="#">브로슈어 <span class="white-space">다운받기</span></a>
+            <button type="button" class="main__btn-brochure">
+              <svg class="icon">
+                <use href="#Arrow (Stroke)"></use>
+              </svg>
+            </button>
+            <img src="/images/Image16.png" alt="브로슈어 팜플렛">
+          </div>
         </div>
       </div>
     </section>
@@ -691,12 +707,15 @@
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Play button">
       <path d="M28 20.5L13 10v21l15-10.5z" fill="#FFFCF9"></path>
     </symbol>
-    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Plus button">
-      <path d="M32 19.25v1.5H20.75V32h-1.5V20.75H8v-1.5h11.25V8h1.5v11.25H32z" fill="#FFFCF9"></path>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Plus button">
+      <path d="M12.8 7.7v.6H8.3v4.5h-.6V8.3H3.2v-.6h4.5V3.2h.6v4.5h4.5zM0 0v-2h-2v2h2zm16 0h2v-2h-2v2zm0 16v2h2v-2h-2zM0 16h-2v2h2v-2zM0 2h16v-4H0v4zm14-2v16h4V0h-4zm2 14H0v4h16v-4zM2 16V0h-4v16h4z" fill="#E27762"></path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Prev button">
       <path d="M26.031 30.875l-1.054 1.055L13 19.965 24.977 8l1.054 1.055-10.898 10.91 10.898 10.91z" fill="#282725">
       </path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="Arrow (Stroke)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.585.287h13.5a1.5 1.5 0 011.5 1.5v13.5a1.5 1.5 0 11-3 0V5.408L2.931 24.061A1.5 1.5 0 01.81 21.939L19.463 3.287H9.585a1.5 1.5 0 010-3z" fill="#FFFCF9" fill-opacity=".5"></path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Same">
       <path fill-rule="evenodd" clip-rule="evenodd"
