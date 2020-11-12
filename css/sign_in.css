@@ -1,5 +1,5 @@
 .main__login {
-  background-image: url(../images/various01.png);
+  background-image: url(/images/Photo01.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,11 +127,11 @@
   color: red;
 }
 
-.is--invalid {
+.login-error.is--invalid {
   opacity: 0;
 }
 
-.is--valid {
+.login-error.is--valid {
   display: block;
 }
 
