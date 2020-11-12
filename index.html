@@ -11,11 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="image/png" rel="icon" href="/images/CafeW(Vertical,Light).png">
   <link type="text/css" rel="stylesheet" href="css/style.css">
-  <link type="text/css" rel="stylesheet" href="css/common.css">
-  <link type="text/css" rel="stylesheet" href="css/cafeLAB.css">
-  <link type="text/css" rel="stylesheet" href="css/Curriculum.css">
-  <link type="text/css" rel="stylesheet" href="css/finshop.css">
-  <link type="text/css" rel="stylesheet" href="css/footer.css">
+  <!-- <script src="js/index.js" defer></script> -->
+
 </head>
 
 <body>
@@ -101,6 +98,15 @@
       </nav>
     </div>
   </header>
+  <div class="header__notice">
+    <a href="#">카페 W 영업시간 조정 안내</a>
+    <time datetime="2020-02-19">2020.02.19</time>
+    <button class="header__notice-btn--close" aria-label="닫기">
+      <svg class="icon">
+        <use href="#Close"></use>
+      </svg>
+    </button>
+  </div>
   <!-- main content start -->
   <main>
     <!-- 1. main recommend section 연구 -->
@@ -150,9 +156,9 @@
     <!-- 2. main lectures section ! 연구-->
     <div class="main__lectures">
       <div class="inner">
-        <section class="main__multicampus">
+        <section class="main__multicampus is--act">
           <h2 class="main__multicampus-heading">
-            <a role="button" href="#"><em>멀티 캠퍼스</em> 추천 강좌</a>
+            <a role="button" href="/" onclick="return false;"><em>멀티 캠퍼스</em> 추천 강좌</a>
           </h2>
           <ul class="main__multicampus-lecture-list">
             <li>
@@ -208,7 +214,7 @@
                 </button>
               </div>
             </li>
-            <li>
+            <li class="is--active">
               <div class="main__multicampus-lecture">
                 <h3 class="main__multicampus-lecture-heading">
                   RESPONSIVE WEB
@@ -220,7 +226,7 @@
                 <a class="more" href="#">강의 정보</a>
               </div>
               <div class="main__multicampus-lecture-dialog">
-                <h3 class="main__multicampus-dialog-heding">
+                <h3 class="main__multicampus-dialog-heading">
                   RESPONSIVE WEB
                   DESIGN&nbsp;STRATEGIES
                 </h3>
@@ -290,10 +296,10 @@
         </section>
         <section class="main__edeum">
           <h2 class="main__edeum-heading">
-            <a role="button" href="#"><em>이듬 블렌디드 러닝</em> 추천 강좌</a>
+            <a role="button" href="/" onclick="return false;"><em>이듬 블렌디드 러닝</em> 추천 강좌</a>
           </h2>
           <ul class="main__edeum-lecture-list">
-            <li>
+            <li class="is--active">
               <div class="main__edeum-lecture">
                 <h3 class="main__edeum-lecture-heading">
                   UI STURCTURE &amp; DESIGN COURSE
@@ -304,15 +310,15 @@
                 <a class="more" href="#">강의 정보</a>
               </div>
               <div class="main__edeum-lecture-dialog">
-                <h3 class="main__edeum-dialog-heding">
-                  UI STURCTURE &amp; DESIGN COURSE
+                <h3 class="main__edeum-dialog-heading">
+                  UI STURCTURE &amp; DESIGN&nbsp;COURSE
                 </h3>
                 <p class="main__edeum-dialog-description">
                   UI 구조 디자인 과정
-                  <span class="main__edeum-dialog-grade">
+                </p>
+                  <span class="main__edeum-dialog-grade white-space">
                     <span aria-hidden="true">★★★★☆</span> 4점
                   </span>
-                </p>
                 <table class="main__edeum-dialog-table">
                   <caption class="a11y-hidden">강좌 정보</caption>
                   <tr>
@@ -356,15 +362,15 @@
                 <a class="more" href="#">강의 정보</a>
               </div>
               <div class="main__edeum-lecture-dialog">
-                <h3 class="main__edeum-dialog-heding">
+                <h3 class="main__edeum-dialog-heading">
                   UI INTERATION &amp; JUNIOR COURSE
                 </h3>
                 <p class="main__edeum-dialog-description">
                   UI 인터렉션 주니어 과정
-                  <span class="main__edeum-dialog-grade">
+                </p>
+                  <span class="main__edeum-dialog-grade white-space">
                     <span aria-hidden="true">★★★★★</span> 5점
                   </span>
-                </p>
                 <table class="main__edeum-dialog-table">
                   <caption class="a11y-hidden">강좌 정보</caption>
                   <tr>
@@ -408,7 +414,7 @@
               <li>
                 <button type="button" class="main__edeum-btn--play">
                   <svg class="icon">
-                    <use href="#Pray button"></use>
+                    <use href="#Pause button"></use>
                   </svg>
                 </button>
               </li>
@@ -477,7 +483,7 @@
     <!-- 4. youtube section 수혁-->
     <section class="main__video">
       <h2 class="a11y-hidden">웹 접근성 유튜브 영상</h2>
-      <div class="main__video-inner ginner">
+      <div class="main__video-inner inner">
         <img class="main__video-symbol1" src="./images/Star_Symbol.png" alt="LAB__symbol">
         <figure class="main__video-youtube iframe-wrapper iframe16-9">
           <iframe src="https://www.youtube.com/embed/IqtUKEWje9Q" frameborder="0"
@@ -498,7 +504,7 @@
         <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
         <a class="main__reserve-more" href="#">자세히 보기</a>
       </div>
-      <img class="main__reserve-symbol" src="./images/Star_Symbol.png" alt="LAB__symbol">
+      <img class="main__reserve-symbol" src="./images/Star-Symbol.png" alt="LAB__symbol">
     </section>
 
     <!-- 6.various section 수혁-->
@@ -518,7 +524,7 @@
           <span>다양한 시도와 디자인으로 가치를 더하는 상품</span>
           소중한 사람에게 마음을 전하는 가장 좋은 방법.카페 W 카드
         </p>
-        <a class="main__various-more" href="#">자세히 보기</a>
+        <a class="main__various-more more" href="#">자세히 보기</a>
         <div class="main__various-imgs">
           <img src="./images/various01.png" alt="다양한 커피 메뉴 추천">
           <img src="./images/various02.png" alt="다양한 커피 메뉴 추천">
@@ -600,11 +606,7 @@
       </div>
     </section>
   </main>
-  <div class="header__notice">
-    <a href="#">카페 W 영업시간 조정 안내</a>
-    <time datetime="2020-02-19">2020.02.19</time>
-    <button class="header__notice-btn--close"></button>
-  </div>
+  
   <!-- footer start -->
   <footer class="footer">
     <div class="footer__inner inner">
@@ -637,8 +639,8 @@
       </small>
     </div>
   </footer>
-  <a href="#" class="go-to-top">
-    <span class="ir">위로이동</span>
+  <a href="#" class="go-to-top" aria-label="위로이동">
+    <span class="ir"></span>
   </a>
 
   <svg hidden width="0" height="0" class="hidden">
@@ -671,6 +673,9 @@
           <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
         </filter>
       </defs>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="Close">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M21 1.082L19.918 0 10.5 9.417 1.082 0 0 1.083 9.417 10.5 0 19.917l1.082 1.081 9.418-9.416 9.418 9.417L21 19.916 11.582 10.5 21 1.082z" fill="#fff"></path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 89" id="GotoTop Button">
       <g filter="url(#filter0_d)">
