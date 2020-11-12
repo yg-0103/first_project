@@ -746,7 +746,7 @@ header {
 .main__various-text span,
 .main__various-text2 span{
   display: block;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 .main__various-text{
   font-size: 32px;
@@ -1000,7 +1000,7 @@ header {
 .main__curriculum-inner:hover{
   width: 300px;
   height: 300px;
-  background-image: url(/images/sejin/W.png);
+  background-image: url(/images/W.png);
   background-repeat: no-repeat;
   background-position: 50% 15%;
 }
@@ -1105,16 +1105,83 @@ header {
   background-color: var(--theme-white);
   color: var(--theme-black);
 }
+/* 공통 푸터 */
+.footer{
+  font-size: 1.6rem;
+  line-height: 22px;
+  background-color: var(--theme-black);
+  color:rgba(255, 252, 249, 0.6);
+  /* margin: 0 auto; */
+}
+
+.footer__inner{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+/* 로고 */
+.footer__logo{
+  padding: 7px 0;
+  margin: 40px 0;
+}
+.footer__inner image{
+  padding: 40px 0;
+}
+
+/* 푸터 목록 */
+.footer__guide-list{
+  width: 99vw;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 140%;
+  order: -1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px 0;
+  border-bottom:1px solid rgba(255,255,255, .3);
+}
+.footer__guide-list li{
+  margin:0 40px 0;
+}
+
+.footer__guide-list a{
+  display: block;
+  /* padding: 5px; */
+}
+
+/* 푸터 주소 */
+.footer__address{
+  font-size: 1.4rem;
+  line-height: 150%;
+  font-style: normal;
+  text-align: center;
+}
+.white-space{
+  display: block;
+}
+.footer__address span{
+  margin: 2px 0;
+}
+
+/* 푸터 저작권 */
+.copyright{
+  font-size: 1.1rem;
+  font-size: normal;
+  display: block;
+  margin-top:30px;
+  margin-bottom: 60px;
+}
 
 /* go to top */
 .go-to-top {
   position: fixed;
   bottom: 5px;
-  right: 30px;
+  right: 40px;
 }
 .go-to-top .ir {
   display: block;
-  width: 100px;
+  width: 80px;
   height: 90px;
   background-image: url(/images/GotoTop-Button.svg);
   background-repeat: no-repeat;

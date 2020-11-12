@@ -2,6 +2,7 @@
   text-align: center;
   margin-top: 100px;
   max-width: 760px;
+  margin-bottom: 100px;
 }
 .main__sign-up {
   border: 1px solid var(--theme-gold);
@@ -32,6 +33,9 @@
   height: 34px;
   padding: 9px;
   font-size: var(--font-small);
+}
+.main__sign-up-form input::placeholder {
+  color: var(--theme-gold);
 }
 .main__user-id,
 .main__user-password,
@@ -182,7 +186,7 @@
   font-weight: 700;
 }
 .main__certification-list li:first-child {
-  border-right: 1px solid var(--theme-gold);
+  border-right: 1px solid rgba(0, 0, 0, .1);
   padding-left: 0;
   padding-top: 57px;
 }
