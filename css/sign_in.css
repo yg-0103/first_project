@@ -1,73 +1,250 @@
-.main__login-section{
+.main__login {
+  background-image: url(../images/various01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0 100px 0;
+  color: var(--theme-gold);
+  position: relative;
+}
+
+.main__login::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+}
+
+.main__login-section {
   margin: 0 auto;
-  background: lightgreen;
+  background: url(../images/Barista.png) no-repeat 100% 100%/ 20% 60%;
+  background-color: var(--theme-white);
   width: 742px;
-  height: 614px;
   border-radius: 6px;
   box-shadow: 0px 15px 14px rgba(70, 55, 17, 0.4);
   position: relative;
+  padding: 25px 0 23px 0;
 }
-.main__login-section::before{
+
+.main__login-section::before {
   content: "";
   position: absolute;
   left: -139px;
   top: 259px;
   width: 70px;
   height: 95px;
-  background: url(../images/Star_Symbol.png) no-repeat;
+  background: url(../images/Star_Symbol_white.png) no-repeat;
 }
-.main__login-section::after{
+
+.main__login-section::after {
   content: "";
   position: absolute;
   right: -139px;
   top: 259px;
   width: 70px;
   height: 95px;
-  background: url(../images/Star_Symbol.png) no-repeat;
+  background: url(../images/Star_Symbol_white.png) no-repeat;
 }
-.main__login-heading{
+
+.main__login-heading {
   text-align: center;
-  border-bottom: 1px solid var(--theme-black);
+  border-bottom: 1px solid #7D6F5D;
+  ;
+  margin: 0;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  padding-bottom: 25px;
 }
-.main__login-heading span{
+
+.main__login-heading span {
   display: block;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
-.login__form-inner{
+
+.login__form-inner {
   margin: 0 152px;
 }
+
 .main__login-id label,
-.main__login-password label{
+.main__login-password label {
   display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
 }
+
+.main__login-id {
+  margin-top: 33px;
+}
+
 .main__login-id input,
 .main__login-password input,
-.main__login-button{
+.main__login-button {
   display: block;
   width: 438px;
   height: 46px;
 }
-.main__login-toggle{
-  margin-bottom: 15px;
+
+.main__login-id input,
+.main__login-password input {
+  border: 2px solid rgba(125, 111, 93, 0.5);
+  border-radius: 3px;
+  transition: 0.3s;
+  padding: 8px;
+  /* font-size: 1.2rem; */
 }
-.main__login-section strong{
+.main__login-id input::placeholder,
+.main__login-password input::placeholder{
+  color: var(--theme-gold);
+}
+
+.main__login-id input:focus,
+.main__login-password input:focus {
+  border: 2px solid var(--theme-gold);
+}
+
+.main__login-id input {
+  margin-bottom: 23px;
+}
+
+.main__login-password {
+  margin-bottom: 30px;
+}
+
+.login-error {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.is--invalid {
+  opacity: 0;
+}
+
+.is--valid {
+  display: block;
+}
+
+.main__login-button {
+  border: 1px solid var(--theme-black);
+  border-radius: 3px;
+  background-color: var(--theme-gold);
+  margin-bottom: 32px;
+  color: var(--theme-white);
+  transition: 0.3s;
+}
+
+.main__login-button:hover {
+  background-color: var(--theme-black);
+}
+
+/* 아이디 저장 컨테이너 */
+.main__login-toggle {
+  margin-bottom: 28px;
+}
+
+.main__login-toggle label {
+  padding-left: 5px;
+  margin-bottom: 28px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.main__login-toggle label :first-child::before {
+  background: url(../images/Switch_Input_Checked.png) no-repeat;
+  width: 40px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+  top: 0;
+}
+
+.main__login-toggle label::before {
+  background: url(../images/Switch_Input.png) no-repeat;
+  width: 40px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+  top: 0;
+}
+
+.main__login-toggle input {
+  display: inline-block;
+  opacity: 0;
+}
+
+.main__login-toggle input:checked+label::before {
+  background-image: url(../images/Switch_Input_Checked.png);
+}
+
+.main__login-toggle label:nth-child(2) {
+  margin-right: 109px;
+}
+
+.main__waring-list li {
+  position: relative;
+  width: 418px;
+  margin: 0 auto;
+}
+
+.main__waring-list strong {
   display: block;
   width: 438px;
   margin: 0 auto;
   font-size: 12px;
   margin-bottom: 7px;
+  font-weight: normal;
+  line-height: 140%;
+  padding-right: 90px;
 }
-.main__login-section strong::before{
+
+.main__waring-list li:nth-child(1) {
+  margin-bottom: 7px;
+}
+
+.main__waring-list li:nth-child(2) {
+  margin-bottom: 31px;
+}
+
+.main__waring-list li:nth-child(2) strong {
+  padding-right: 80px;
+}
+
+.main__login-section strong::before {
   content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
   background: url(../images/Star.png) no-repeat;
+  position: absolute;
+  top: 4px;
+  left: -14px;
 }
-.main__login-list{
+
+.main__login-list {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  border-top: 1px solid #7D6F5D;
+  ;
+  padding-top: 20px;
+  text-align: center;
 }
-.main__login-list span{
+
+.main__login-list span {
   margin: 0 16px;
 }
