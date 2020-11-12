@@ -1,0 +1,67 @@
+/* 공통 푸터 */
+.footer{
+  font-size: 1.6rem;
+  line-height: 22px;
+  background-color: #282725;;
+  color:rgba(255, 252, 249, 0.6);
+  /* margin: 0 auto; */
+}
+
+.footer__inner{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+/* 로고 */
+.footer__logo{
+  padding: 7px 0;
+  margin: 40px 0;
+}
+.footer__inner image{
+  padding: 40px 0;
+}
+
+/* 푸터 목록 */
+.footer__guide-list{
+  width: 100vw;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 140%;
+  order: -1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px 0;
+  border-bottom:1px solid #FFFCF9;
+}
+.footer__guide-list li{
+  margin:0 40px 0;
+}
+
+.footer__guide-list a{
+  display: block;
+  /* padding: 5px; */
+}
+
+/* 푸터 주소 */
+.footer__address{
+  font-size: 1.4rem;
+  line-height: 150%;
+  font-style: normal;
+  text-align: center;
+}
+.white-space{
+  display: block;
+}
+.footer__address span{
+  margin: 2px 0;
+}
+
+/* 푸터 저작권 */
+.copyright{
+  font-size: 1.1rem;
+  font-size: normal;
+  display: block;
+  margin-top:30px;
+  margin-bottom: 60px;
+}

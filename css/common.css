@@ -1,21 +1,726 @@
-/* 본문 바로가기 */
-.Skip-nav a{
-display: none;
-width: 100%;
-Height: 0;
-Padding:0;
-Text-align: center;
-Z-index: 100;
-position: absolute;
-Top:0;
-left: 0;
+/* Header */
+header {
+  background-color: var(--theme-black);
+  color: var(--theme-white);
+
+}
+.header__container {
+  border-bottom: 1px solid rgba(255,255,255, .3);
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 0;
+  align-items: center;
+  
 }
 
-.skip-nav a:focus{
-height: auto;
+.header__heading {
+  margin: 0;
+}
+.header__heading a {
+  display: block;
+  width: 100px;
+  height: 40px;
+}
+.header__heading img {
+  width: 100%;
+}
+.header__sign-list {
+  display: flex;
+  order: -1;
+}
+.header__sign-list li {
+  margin-right: 30px;
+}
+.header__search-form {
+  display: flex;
+  position: relative;
+}
+.header__search {
+  background-color: transparent;
+  border: none;
+  padding: 8px 30px 8px 15px;
+  width: 242px;
+  height: 40px;
+  color: var(--theme-white);
+}
+.btn--search {
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  border: none;
+  
+}
+.btn--search svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* lab section */
+/* navigation */
+
+.header__navigation {
+  padding: 42px 0;
+}
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu-item {
+  margin-bottom: 18px;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header__sub-menu-list li {
+  margin-bottom: 7px;
+  font-size: 1.5rem;
+}
+
+/* 1. main recommend 연구*/
+.main__recommend {
+  background-color: var(--theme-lightorange);
+  padding: 70px 10px 150px;
+}
+.main__recommend-inner {
+  display: flex;
+  position: relative;
+}
+.main__recommend-text {
+  flex-basis: 30%;
+  text-align: center;
+}
+.main__recommend-description {
+  font-size: 4rem;
+  color: var(--theme-lightpink);
+  
+}
+.main__recommend-description::after {
+  content: "";
+  display: inline-block;
+  width: 320px;
+  height: 2px;
+  background-color: var(--theme-lightpink);
+}
+.main__recommend-description span {
+  display: inline-block;
+}
+.main__recommend-style-text::before,
+.main__recommend-style-text::after {
+  content: "";
+  display: inline-block;
+  width: 130px;
+  height: 2px;
+  background-color: var(--theme-lightpink);
+  vertical-align: middle;
+  margin: 0 10px
+}
+.main__recommend-big-text {
+  color: var(--theme-pink);
+  font-size: 9rem;
+}
+.main__recommend-description em {
+  display: inline-block;
+  font-style: normal;
+  font-size: 2.6rem;
+  margin-top: 30px;
+}
+.main__recommend-list {
+    flex-basis: 70%;
+    position: relative;
+}
+.main__recommend-list li {
+  position: absolute;
+  left: 250px;
+}
+.main__recommend-list li:first-child {
+  bottom: -70px;
+  left: 0;
+}
+.main__recommend-list li:last-child {
+  bottom: -40px;
+  left: 500px;
+}
+.main__recommend-thumbnail {
+  width: 283px;
+  text-align: center;
+}
+.main__recommend-thumbnail img {
+  width: 100%;
+}
+.main__recommend-thumbnail figcaption {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.main__recommend-thumbnail {
+  color: var(--theme-lightbrown);
+}
+.main__recommend-thumbnail [lang="en"] {
+  display: block;
+  font-size: 28px;
+  color: var(--theme-brown);
+} 
+.main__recommend-more {
+  position: absolute;
+  bottom: -30px;
+  color: var(--theme-pink);
+  left: 115px;
+}
+/* 2. main-lectures 연구 */
+.main__lectures {
+  position: relative;
+}
+.main__multicampus,
+.main__edeum {
+  
+}
+
+.main__multicampus-heading,
+.main__edeum-heading {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main__multicampus-heading::after,
+.main__edeum-heading::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  background-image: url(/images/Down-button.svg);
+  background-position: center;
+  background-size: contain;
+  margin-left: 50px;
+}
+.main__multicampus-heading {
+  text-align: right;
+  margin-right: 530px;
+  padding: 20px;
+}
+.main__edeum-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--theme-black);
+  width: 600px;
+  padding: 20px 120px 20px 0;
+  color: var(--theme-white);
+  text-align: right;
+}
+.main__multicampus-heading em,
+.main__edeum-heading em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.main__multicampus-lecture-list,
+.main__edeum-lecture-list {
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+}
+.main__edeum-lecture-list {
+  display: none;
+}
+.main__multicampus-lecture-list li,
+.main__edeum-lecture-list li {
+  border: 1px solid;
+  margin-right: 20px;
+  flex: 1;
+  color: var(--theme-white);
+  background-color: var(--theme-black);
+  padding-bottom: 30px;
+  position: relative;
+}
+.main__multicampus-lecture-list li::before,
+.main__edeum-lecture-list li::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 220px;
+  background-image: url(/images/Image06.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main__multicampus-lecture-heading,
+.main__edeum-lecture-heading {
+  margin-bottom: 0;
+  font-size: var(--font-big);
+  padding: 0 120px;
+}
+
+.main__multicampus-lecture-description,
+.main__edeum-lecture-description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.main__multicampus-lecture .more,
+.main__edeum-lecture .more {
+  margin: 0;
+}
+.main__multicampus-lecture-dialog,
+.main__edeum-lecture-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 39, 37, 0.95);
+  text-align: left;
+  padding: 30px;
+}
+.main__multicampus-lecture-dialog {
+  display: none;
+}
+
+.main__multicampus-dialog-heding,
+.main__edeum-dialog-heding {
+  font-size: var(--font-big);
+  margin: 0;
+}
+.main__multicampus-dialog-description,
+.main__edeum-dialog-description {
+  margin: 0;
+  font-size: var(--font-middle);
+  margin-bottom: 14px;
+}
+.main__multicampus-dialog-table,
+.main__edeum-dialog-table {
+  margin-top: 43px;
+  font-size: var(--font-small);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.main__multicampus-dialog-table td,
+.main__edeum-dialog-table td {
+  border-bottom: 1px solid rgba(255,255,255, .3);
+}
+.main__multicampus-dialog-table th,
+.main__edeum-dialog-table th {
+  font-weight: 400;
+  padding: 15px 0;
+  width: 100px;
+  border-bottom: 1px solid rgba(255,255,255, .3);
+}
+.main__multicampus-dialog-table tr:last-child th,
+.main__edeum-dialog-table tr:last-child th,
+.main__multicampus-dialog-table tr:last-child td,
+.main__edeum-dialog-table tr:last-child td {
+  border: none;
+}
+.main__multicampus-btn--close,
+.main__edeum-btn--close {
+  background: none;
+  border: none;
+  color: var(--theme-white);
+  position: absolute;
+  top: 37px;
+  right: 36px;
+  font-size: var(--font-middle);
+}
+
+.main__muliticampus-pagination,
+.main__edeum-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.main__edeum-pagination {
+  display: none;
+}
+.main__multicampus-pagination-list,
+.main__edeum-pagination-list {
+  display: flex;
+  align-items: center;
+}
+.main__multicampus-pagination-list li,
+.main__edeum-pagination-list li {
+  margin-right: 15px;
+}
+.main__multicampus-pagination-list li:nth-child(2) a,
+.main__edeum-pagination-list li:nth-child(2) a {
+  width: 30px;
+  border-radius: 30px;
+  background-color: var(--theme-black);
+}
+.main__multicampus-pagination-list a,
+.main__edeum-pagination-list a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 50%;
+}
+.main__multicampus-btn--prev,
+.main__edeum-btn--prev {
+  position: absolute;
+  left: 0;
+  top: 52%;
+  left: 50px;
+  width: 40px;
+  height: 30px;
+  background: none;
+  padding: 0;
+  border: none;
+}
+.main__multicampus-btn--play,
+.main__edeum-btn--play {
+  width: 40px;
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.main__multicampus-btn--next,
+.main__edeum-btn--next {
+  width: 40px;
+  height: 30px;
+  background: none;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 52%;
+  right: 50px;
+}
+
+/* 3. review , favorite section 연구*/
+.main__review-favorite {
+  padding: 30px 110px;
+  background-color: var(--theme-gold);
+  margin-top: 30px;
+}
+.main__review-favorite-inner {
+  display: flex;
+}
+.main__review {
+  background: rgba(40, 39, 37, 0.95);
+  padding: 50px 100px;
+  color: var(--theme-white);
+  margin-right: 20px;
+  flex-basis: 60%;
+}
+.main__review-description {
+  font-size: var(--font-small);
+  line-height: 2;
+  font-weight: 100;
+}
+.main__review-description span {
+  font-weight: 700;
+}
+.main__review-description::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: rgba(255,255,255, .3);
+  margin-bottom: 30px;
+}
+.main__review-description strong {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 10px;
+}
+.main__review-grade {
+  display: block;
+  margin-top: 19px;
+  font-size: var(--font-middle);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main__review-more {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  transform: translate(-80px, 30px);
+}
+.main__favorite-brochure {
+  flex-basis: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.main__favorite {
+  padding: 40px 30px 30px 30px;
+  background: var(--theme-white);
+  margin-bottom: 20px;
+  color: var(--theme-gold);
+  position: relative;
+  flex: 2;
+}
+.main__favorite-heading {
+  font-size: var(--font-middle);
+  margin: 0;
+  margin-bottom: 24px;
+}
+.main__favorite-heading span {
+  font-size: 2.6rem;
+}
+.main__favorite-list {
+  counter-reset: numbering;
+}
+.main__favorite-list li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__favorite-list li::before {
+  counter-increment: numbering;
+  content: counter(numbering)".";
+  margin-right: 5px;
+}
+.main__favorite-list li a {
+  flex: 1;
+}
+.main__favorite-list li em {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  padding-top: 22px;
+}
+.main__favorite-list .main__favorite-list-up {
+  background-image: url(/images/increase-color.svg);
+}
+.main__favorite-list .main__favorite-list-new {
+  background-image: url(/images/New-color.svg);
+}
+.main__favorite-list .main__favorite-list-down {
+  background-image: url(/images/Decrease-color.svg);
+}
+.main__favorite-list .main__favorite-list-same {
+  background-image: url(/images/same-color.svg);
+} 
+.main__favorite-more {
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50px;
+  right: 16px;
+}
+.main__favorite-more svg {
+  width: 100%;
+  height: 100%;
+}
+.main__brochure {
+  background: var(--theme-pink);
+  padding: 25px;
+  position: relative;
+  flex: 1;
+}
+.main__brochure a {
+  font-size: 3.1rem;
+  color: var(--theme-white);
+  font-weight: 700;
+}
+.main__btn-brochure {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  margin-top: 15px;
+}
+
+.main__brochure img {
+  width: 400px;
+  position: absolute;
+  top: -40px;
+  right: -70px;
+}
+
+/* 4. youtube section */
+.main__video{
+  background-color: var(--theme-black);
+}
+.main__video-inner{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 25px 0;
+}
+.iframe-wrapper{
+  margin: 0;
+}
+.iframe-wrapper{
+  width: 100%;
+  height: 0 !important; /*글자 크기의 높이를 가질 수 있기 때문에*/
+  position: relative;
+}
+.iframe4-3{
+  padding-top: 75%;
+}
+.iframe16-9{
+  padding-top: 56.25%;
+}
+.iframe-wrapper iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main__video-symbol1{
+  display: block;
+  width: 70px;
+  height: 95px;
+  margin-right: 85px;
+}
+.main__video-symbol2{
+  display: block;
+  width: 70px;
+  height: 95px;
+  margin-left: 85px;
+}
+/* 5. reserve section */
+.main__reserve{
+  background: radial-gradient(109.05% 429.25% at 50% 50%, rgba(23, 15, 4, 0) 0%, #3C1D0A 100%), url(../images/Image01.png) no-repeat center;
+  background-size: 100%;
+  min-height: 458px;
+  position: relative;
+}
+.main__reserve-inner{
+  margin-left: 224px;
+  padding-top: 90px;
+  color: var(--theme-lightpink);
+}
+.main__reserve-heading{
+  display: block;
+  margin: 0;
+  font-size: var(--font-small);
+}
+.main__reserve-inner p,
+.main__reserve-inner span{
+  margin: 0;
+  padding: 0;
+}
+.main__reserve-inner p{
+  font-size: var(--font-middle);
+}
+.main__reserve-inner span{
+  display: block;
+  font-size: var(--font-small);
+  white-space: pre-wrap;
+  width: 150px;
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+.main__reserve-more{
+  border: 1px solid var(--theme-lightpink);
+  font-size: var(--font-small);
+  padding: 10px 25px;
+  box-sizing: border-box;
+  width: 128px;
+  height: 36px;
+}
+.main__reserve img{
+  position: absolute;
+  top: 124px;
+  left: 120px;
+}
+/* 6. various section */
+.main__various{
+  background: linear-gradient(105.54deg, rgba(32, 23, 1, 0.5) 36.2%, rgba(95, 57, 35, 0.2) 74.71%), url(../images/Image10.png) no-repeat;
+  background-size: 100% 100%;
+  color: var(--theme-white);
+  height: 841px;
+}
+.main__various-inner{
+  margin-left: 111px;
+  padding-top: 110px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 401px;
+  text-align: right;
+  position: relative;
+}
+.main__various-header{
+  margin: 0;
+}
+.main__various-header span,
+.main__various-text span,
+.main__various-text2 span{
+  display: block;
+}
+.main__various-text{
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.main__various-text2{
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.main__various-header span:nth-child(1){
+  font-size: 155px;
+  line-height: 80%;
+  letter-spacing: 0.05em;
+}
+.main__various-header span:nth-child(2){
+  font-size: 133px;
+  line-height: 80%;
+  letter-spacing: 0.05em;
+}
+.main__various-header span:nth-child(3){
+  font-size: 74px;
+  line-height: 80%;
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+}
+.main__various-more{
+  border: 1px solid var(--theme-white);
+  width: 128px;
+  height: 39px;
+  padding: 11.5px 25px;
+  font-size: 16px;
+  line-height: 16px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.main__various-imgs img{
+  width: 284px;
+  height: 362px;
+  border: 10px solid var(--theme-white);
+}
+.main__various-imgs img:nth-child(1){
+  position: absolute;
+  top: 191px;
+  left: 592px;
+  filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.45));
+  transform: rotate(-9.21deg);
+}
+.main__various-imgs img:nth-child(2){
+  position: absolute;
+  top: 151px;
+  left: 805px;
+  filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.45));
+  transform: rotate(8.71deg);
+}
+.main__various-imgs img:nth-child(3){
+  position: absolute;
+  top: 292px;
+  left: 938px;
+  filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.45));
+  transform: rotate(29.6deg);
+
+}
+
+ /*7. lab section */
 .main__lab{
   background: yellow;
   /* padding: 80px 120px; */
@@ -101,4 +806,186 @@ height: auto;
   margin-top: 15px;
   /* 원래는 margin-top:30/ border:10px */
   border: 5px solid #FFFCF9;
+}
+
+
+/* 8. Curriculum section 세진*/
+.main__curriculum:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:radial-gradient(50% 50% at 50% 50%, 
+  rgba(68, 56, 45, 0) 0%, rgba(104, 41, 12, 0.4) 100%);
+}
+.main__curriculum{
+  background: url(/images/Image07.png) no-repeat 50% 50% / cover;
+  height: 540px;
+  position: relative;
+}
+
+/* 카드 감싸기 */
+.main__curriculum-inner{
+  background-color: #FFFCF9;
+  box-shadow: 0px 0px 15px rgba(103, 48, 25, 0.3);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top:240px;
+  left:690px;
+}
+
+/* Curriculum logo 기준 */
+.main__curriculumcard img{
+  position:absolute;
+  display:block;
+  left:50%;
+  top:50%;
+  transform: translate( -50%, -50%);
+}
+
+.main__curriculumcardback{
+  color: #7D6F5D;
+  display: none;
+  left:50%;
+  top:50%;
+}
+
+
+.main__curriculum-heading{
+  padding:80px 55px 20px;
+  margin:0;
+}
+
+.main__curriculumcardback p{
+  padding-bottom: 25px;
+  margin: 0 23px;
+  text-align:center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.main__curriculumcardback p em{
+  font-weight: 700;
+  font-style:normal;
+}
+.main__curriculumcardback a{
+  border-right-color: #7d6f5d;
+  border: 2px solid #7D6F5D;
+  border-radius: 3px;
+  font-style: Bold;
+  font-size: 1.6rem;
+  display: block;
+  margin: 0 90px;
+}
+
+/* hover */
+.main__curriculum-inner:hover{
+  width: 300px;
+  height: 300px;
+  background-image: url(/images/sejin/W.png);
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
+}
+.main__curriculumcard:hover img{
+  display: none;
+
+}
+.main__curriculum-inner:hover .main__curriculumcardback{
+  display: block;
+}
+
+/* 9. findshop  세진*/
+.main__findshop{
+  width: 100%;
+  background: radial-gradient(65.6% 264.49% at 59.55% 37.62%,
+  rgba(40, 39, 37, 0.95) 0%, 
+  #282725 73.46%, #171615 100%);
+  color: #FFFCF9;
+  
+}
+.main__findshop-inner{  
+  display: flex;
+}
+.main__findshop-inner div:first-child {
+  flex-basis: 40%;
+}
+.main__findshop-inner div:last-child {
+  flex-basis: 60%;
+  padding: 50px 114px 0;
+}
+.main__findshop-wrapper img{
+  display: block;
+  margin: 0 auto;
+}
+.main__findshop-wrapper a {
+  display: inline-block;
+  text-align: left;
+}
+
+
+/* 카페 W연구소 매장 내부사진 */
+.main__findshop-background-list{
+  position: relative;
+}
+.main__findshop-background-list li{
+  width: 360px;
+  height: 360px;
+  position: absolute;
+}
+.main__findshop-background-list li:nth-child(1) {
+  top: -80px;
+}
+.main__findshop-background-list li:nth-child(2){
+  top: 120px;
+  left: 270px;
+  width: 220px;
+  height: 220px;
+}
+
+.main__findshop-background-list li img{
+  border-radius: 50%;
+  display: block;
+}
+
+/* findshop section text */
+.main__findshop-heading{
+  display: none;
+}
+.main__findshop-wrapper p{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 110%;
+  margin-top:10px;
+}
+
+.main__findshop-wrapper p:nth-child(3){
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 110%;
+}
+
+/* 매장 3가지 종류 */
+.main__findshop-list{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+.main__findshop-list em{
+  font-style: normal;
+  font-weight: 700;
+}
+.main__findshop-wrapper .more{
+  margin-top:30px;
+  border: 2px solid #FFFCF9;
+  border-radius: 3px;
 }
