@@ -4,7 +4,7 @@
 [![github](https://img.shields.io/github/issues-pr-closed/yg-0103/first_project?color=green)](https://github.com/yg-0103/first_project/pulls?q=is%3Apr+is%3Aclosed)
 ---
 
-팀이름 : 구진혁
+팀이름 : 구진혁  
 HTML, CSS만으로 웹페이지 UI제작 프로젝트입니다.  
 제작기간 2020.11.09 - 2020.11.12  
 
