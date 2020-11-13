@@ -31,10 +31,10 @@ Developer--제작된 UI 디자인을 토대로 데스크탑 UI를 개발합니�
 - 팀 버전 관리 (GitHub)
 
 Semantic Markup(HTML5 + WAI-ARIA) 
-![이미지](./images/readme_images/SemanticMarkup.png)
+![이미지](./images/readme_images/SemanticMarkupp.png)
 
 Version Control System (Git + GitHub)
-![이미지](./images/readme_images/git.png)
+![이미지](./images/readme_images/gitt.png)
  
 ## Gantt chart  
 ![이미지](./images/readme_images/ganttchart.png)
