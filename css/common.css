@@ -486,6 +486,17 @@ header {
   padding: 30px 110px;
   background-color: var(--theme-gold);
   margin-top: 30px;
+  position: relative;
+}
+.main__review-favorite::before {
+  content:"5";
+  font-weight: 200;
+  color: rgba(255,255,255, 0.03);
+  font-size: 600px;
+  position: absolute;
+  top: -130px;
+  left: 510px;
+
 }
 .main__review-favorite-inner {
   display: flex;
